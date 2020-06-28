@@ -1,0 +1,83 @@
+.App {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.btn {
+  width: 200px !important;
+  height: 40px !important;
+  color: #000000;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  transform: scale(1);
+  transition: .3s;
+}
+
+.btn::after {
+  content: '';
+  width: 0;
+  height: 40px;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transform: scale(1);
+}
+
+.btn:hover::after {
+  width: 200px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-save {
+  width: 100%;
+  height: 40vh;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  color: #000000;
+  transition: .3s;
+}
+
+.btn-save:hover {
+  color: #ffffff;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.box p {}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.box:focus {
+  color: white;
+}
+
+.color-palette {
+  width: 80%;
+  height: 80%;
+  margin-left: 2em;
+  position: relative;
+}
+
+.color-palette .hex-color {
+  position: absolute;
+  top: 60px;
+  right: -10px;
+  z-index: 2;
+  font-weight: bold;
+}
